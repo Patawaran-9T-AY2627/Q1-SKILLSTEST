@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Skills Test</title>
+    <style>
+        /* General Page Background */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #b8a2ca;
+            margin: 0;
+            padding: 20px;
+            color: #2b103c;
+        }
+
+        /* Compact Centered Container */
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 25px;
+        }
+
+        /* Logo & Headers */
+        .logo-container {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .logo {
+            width: 50px;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+            color: #5b2c83; /* Deep Purple */
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        .intro-text {
+            font-size: 0.8rem;
+            color: #666666;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        /* Compact Form Fields */
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: #3b1754;
+            margin-bottom: 3px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 6px 8px;
+            border: 1px solid #b8a2ca;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 0.8rem;
+            background-color: #faf7fc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #6a1b9a;
+            background-color: #ffffff;
+        }
+
+        .inline-options {
+            display: flex;
+            gap: 12px;
+            font-size: 0.8rem;
+        }
+
+        .inline-options label {
+            font-weight: normal;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        /* Compact Lists */
+        .list-section {
+            margin-top: 12px;
+            font-size: 0.8rem;
+        }
+
+        .list-section h3 {
+            font-size: 0.85rem;
+            margin: 8px 0 4px 0;
+            color: #5b2c83;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            margin: 4px 0;
+        }
+
+        a {
+            color: #6a1b9a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        dl {
+            margin: 6px 0;
+        }
+
+        dd {
+            margin-left: 10px;
+            font-size: 0.78rem;
+            color: #555;
+        }
+
+        /* Submit Button */
+        .text-center {
+            text-align: center;
+        }
+
+        .submit-btn {
+            background-color: #6a1b9a; /* Vibrant Purple */
+            color: white;
+            padding: 8px 22px;
+            border: none;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.2s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #4a148c;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 0.75rem;
+            color: #d1c4e9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logo Header -->
+        <div class="logo-container">
+        </div>
+
+        <!-- Page Title -->
+        <h1>OBMC Robotics Club Application Form</h1>
+
+        <!-- Heading & Paragraph Introduction -->
+        <p class="intro-text">
+            Welcome! Please fill out this form to apply for our school's Robotics Club.
+        </p>
+
+        <!-- Application Form -->
+        <form action="#" method="POST">
+            
+            <!-- Input Field: Full Name -->
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <!-- Input Field: Email -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Dropdown Select: Grade Level -->
+            <div class="form-group">
+                <label for="grade">Grade Level:</label>
+                <select id="grade" name="grade" required>
+                    <option value="" disabled selected>Select grade...</option>
+                    <option value="7">Grade 7</option>
+                    <option value="8">Grade 8</option>
+                    <option value="9">Grade 9</option>
+                    <option value="10">Grade 10</option>
+                </select>
+            </div>
+
+            <!-- Radio Buttons: Gender -->
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="inline-options">
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+            </div>
+
+            <!-- Checkboxes: Skills -->
+            <div class="form-group">
+                <label>What are your skills?</label>
+                <div class="inline-options">
+                    <label><input type="checkbox" name="skills" value="Coding"> Coding</label>
+                    <label><input type="checkbox" name="skills" value="Design"> Design</label>
+                    <label><input type="checkbox" name="skills" value="Electronics"> Electronics</label>
+                </div>
+            </div>
+
+            <!-- Textarea: Reason to join -->
+            <div class="form-group">
+                <label for="reason">Tell us why you want to join:</label>
+                <textarea id="reason" name="reason" rows="2"></textarea>
+            </div>
+
+            <!-- Unordered List (ul) -->
+            <div class="list-section">
+                <h3>Top Robotics Activities We Offer:</h3>
+                <ul>
+                    <li>Line Following Robots</li>
+                    <li>Obstacle Avoidance Programming</li>
+                    <li>Light Following Robot</li>
+                </ul>
+            </div>
+
+            <!-- Ordered List (ol) & Hyperlinks (a) -->
+            <div class="list-section">
+                <h3>Helpful Links:</h3>
+                <ol>
+                    <li><a href="https://www.robotics.org" target="_blank">Robotics.org</a></li>
+                    <li><a href="https://www.firstinspires.org/robotics/frc" target="_blank">FIRST Robotics</a></li>
+                </ol>
+            </div>
+
+            <!-- Description List (dl) -->
+            <div class="list-section">
+                <dl>
+                    <dt><strong>Robotics Club Goal</strong></dt>
+                    <dd>To innovate, build, and excel in technology and teamwork.</dd>
+                </dl>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group text-center">
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>2025 Robotics Club Application | Created by Jade Patawaran - 9 Topaz</p>
+    </footer>
+
+</body>
+</html>
